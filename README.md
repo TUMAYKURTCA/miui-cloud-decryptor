@@ -4,7 +4,7 @@ MIUI gallery app uses AES for encrypting its photos/videos in CTR mode using the
 ## Usage
 First, install requirements
 ```
-pip install -r requirements
+pip install -r requirements.txt
 ```
 And then
 ```
