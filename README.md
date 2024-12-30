@@ -1,6 +1,6 @@
 # Xiaomi gallery hidden files decrypter (.lsa/.lsav)
 ## How does it work?
-MIUI gallery app uses AES for encrypting its photos/videos in CTR mode using the IV `byte[] sAesIv = {17, 19, 33, 35, 49, 51, 65, 67, 81, 83, 97, 102, 103, 104, 113, 114};` and the first 16 bytes of the gallery apk's certificate as the key. This tool can decrypt files using the same values
+MIUI gallery app uses AES for encrypting its photos/videos in CTR mode using the IV `byte[] sAesIv = {17, 19, 33, 35, 49, 51, 65, 67, 81, 83, 97, 102, 103, 104, 113, 114};` and the first 16 bytes of the gallery apk's certificate as the key
 ## Usage
 First, install requirements
 ```
