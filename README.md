@@ -53,5 +53,3 @@ secretKey = bytes.fromhex('3082046c30820354a003020102020900')
 ```
 
 Thank you for reading <3
-
-```
