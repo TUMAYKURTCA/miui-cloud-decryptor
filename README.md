@@ -47,7 +47,7 @@ yLpj6sLVuj2OdrT/Kkmw24oz70rg3QqEDdKocUy1UxpWt4aBnsnrEFHZGyP94GvZ
 0HCPFQxPnv5qQWykpeDCOpUq+TGtNXn7SosZ3pj2S9k=
 -----END CERTIFICATE-----
 ```
-After converting it from base 64 to hex: `3082046c30820354a003020102020900.....`. Now use it in python:
+And after converting from base 64 to hex: `3082046c30820354a003020102020900.....`. Now use it in python:
 ```py
 secretKey = bytes.fromhex('3082046c30820354a003020102020900')
 ```
