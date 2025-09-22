@@ -1,3 +1,17 @@
+#Changelog / Improvements
+This repository is based on the original MIUI Cloud Decryptor.
+The following improvements and modifications have been added in this version:
+
+#Code Improvements
+Dedicated output directory (decrypted/)
+All decrypted files are now stored in a separate folder named decrypted/, keeping input and output files organized and avoiding accidental overwriting.
+Unique output filenames
+Implemented _unique_outpath() function to automatically append numeric suffixes (_1, _2, etc.) if a file with the same name already exists. This ensures no output is lost due to overwriting.
+Type hints for better readability
+Functions now use Union[str, os.PathLike] type hints, improving clarity and editor/IDE support.
+Cleaner output handling
+Instead of writing decrypted files into the original folder, the script now ensures outputs are placed into a dedicated directory, improving workflow for batch processing.
+
 # Xiaomi gallery hidden files decryptor (.lsa/.lsav)
 ## How does it work?
 MIUI gallery app uses AES for encrypting its photos/videos in CTR mode using the IV `byte[] sAesIv = {17, 19, 33, 35, 49, 51, 65, 67, 81, 83, 97, 102, 103, 104, 113, 114};` and the first 16 bytes of the gallery apk's certificate as the key
