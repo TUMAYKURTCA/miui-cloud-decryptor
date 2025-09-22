@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 And then
 ```
-python ./miui-cloud-decrypt.py <one single file .lsa or .lsav / directory of .lsa and .lsav files>
+python ./miui_decrypt_plus.py <one single file .lsa or .lsav / directory of .lsa and .lsav files>
 ```
 ## Important note
 The encrypted file must have the following name: `<file name>.<md5 of key>.lsa` and if the md5 of the key is `3e751332435bfad27569ca4efed1b602` it probably will be 100% decrypted but if not it probably won't decrypt the file correctly. You'll have to change `secretKey` to the first 16 bytes of the gallery apk's certificate:
