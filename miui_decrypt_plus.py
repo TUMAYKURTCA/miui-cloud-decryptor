@@ -85,7 +85,9 @@ def main(path: Union[str, os.PathLike]):
         ext = filetype.guess_extension(data[:1024]) or 'unknown'
         
         # Changed: output goes to "decrypted" directory instead of the same folder
-        outdir = _ensure_output_dir(dirname)
+        # outdir = _ensure_output_dir(dirname)
+        outdir = os.path.join(dirname, "decrypted")
+        os.makedirs(outdir, exist_ok=True)
         
         # Changed: unique output filename to avoid overwriting
         outpath = _unique_outpath(os.path.join(outdir, basename[0]), ext)
